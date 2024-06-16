@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project.component';
 import { ProjectRoutingModule } from './project-routing.module';
+import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from 'primeng/button';
 
 
 
@@ -11,7 +13,9 @@ import { ProjectRoutingModule } from './project-routing.module';
   ],
   imports: [
     CommonModule,
-    ProjectRoutingModule
+    ProjectRoutingModule,
+    ButtonModule,
+    RippleModule
   ]
 })
 export class ProjectModule { }

@@ -1,5 +1,6 @@
 export interface Project {
-    id?: string;
-    code?: string;
-    name?: string;
+    projectName?: string;
+    projectDescription?: string;
+    projectCode?: string;
+    active?: boolean;
 }

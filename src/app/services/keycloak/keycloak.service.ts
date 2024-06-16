@@ -34,6 +34,14 @@ export class KeycloakService {
     }
   }
 
+  getUserProfile(): Promise<Keycloak.KeycloakProfile> {
+    return this.keycloak.loadUserProfile();
+  }
+
+  getToken(): string {
+    return this.keycloak.token || '';
+  }
+
   login() {
     return this.keycloak.login();
   }
