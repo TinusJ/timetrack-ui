@@ -1,0 +1,11 @@
+<div class="layout-footer">
+    <img [src]="'assets/layout/images/footer-' + (layoutService.config().colorScheme === 'light' ? 'ultima' : 'ultima-dark') + '.svg'" alt="ultima-footer-logo">
+    <div *ngIf="environmentName" class="p-ml-auto">
+        <p-badge [value]="environmentName" severity="info" styleClass="p-mr-2"></p-badge>
+      </div>
+    <div class="flex gap-2">
+        <button pButton pRipple type="button" icon="pi pi-github" class="p-button-rounded p-button-text p-button-plain"></button>
+        <button pButton pRipple type="button" icon="pi pi-facebook" class="p-button-rounded p-button-text p-button-plain"></button>
+        <button pButton pRipple type="button" icon="pi pi-twitter" class="p-button-rounded p-button-text p-button-plain"></button>
+    </div>
+</div>
